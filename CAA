@@ -1,0 +1,2 @@
+cloudflare-dns.com.	IN	CAA	0 issue "digicert.com"
+cloudflare-dns.com.	IN	CAA	0 iodef "mailto:admin@cloudflare.con"

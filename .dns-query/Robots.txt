@@ -1,0 +1,16 @@
+# deny from
+User Agent: *
+User Agent: .*/*
+User Agent: *string*
+User Agent: *array*
+User Agent: TwitterBot
+User Agent: <?>bot</>
+Disallow: *resp.body*
+Disallow: *
+Disallow: ./.
+Disallow: *./.
+Disallow: /..
+Disallow: *string*
+Disallow: *array*
+Disallow: *byte*
+Disallow: *hex*

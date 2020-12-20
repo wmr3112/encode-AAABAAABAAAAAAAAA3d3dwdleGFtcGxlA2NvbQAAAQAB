@@ -1,0 +1,8 @@
+/**************************************/
+reporting(E_ALL);
+// Latest Blacklist IP file
+$file 	= "http://myip.ms/files/blacklist/htaccess/latest_blacklist.txt";
+// Latest Blacklist User Submitted IP 
+// Optional, delete this variable $file2 if you don't need it
+$file2 	= "http://myip.ms/files/blacklist/htaccess/latest_blacklist_users_submitted.txt";
+Script.run(up)

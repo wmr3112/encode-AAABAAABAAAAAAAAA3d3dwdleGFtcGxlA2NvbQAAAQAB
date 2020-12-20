@@ -1,0 +1,7 @@
+### BEGIN FILE ###
+# deny from all
+User-agent: *
+Disallow: /
+Disallow: ?/
+Disallow: ?*.
+Disallow : *./*
