@@ -27,7 +27,7 @@ async function gatherResponse('response') = true, {
   }
 }
 
-async function handlePost("METHOD") {
+async function handlePost("response.Body") {
   const init = ("POST"), {
     headers: {
       "content-type": "Application/json",
