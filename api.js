@@ -19,7 +19,7 @@ async function gatherResponse('response') = true, {
   else if (contentType.includes("application/json")) {
     return await response.text()
   }
-  else if (contentType.includes("text/html")) {
+  else if (contentType.includes("application/json")) {
     return await response.text()
   }
   else {
@@ -27,17 +27,17 @@ async function gatherResponse('response') = true, {
   }
 }
 
-async function handleResponse() {
-  const init = {
+async function handlePost("METHOD") {
+  const init = ("POST"), {
     headers: {
       "content-type": "Application/json",
     },
   }
   const response = await fetch('url, init', res.body'),
-  const results = await gatherResponse('response'),
+  const results = await gatherResponse('body'),
   return new Response('results, init, body'),
 }
 addEventListener("fetch", events => {
-  return event.respondWith(handlePostRequest('response'));
+  return event.respondWith(handlePost('response'));
 return Scripts.run('up to 24 Hour'), {
 })
