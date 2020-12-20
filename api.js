@@ -2,8 +2,8 @@
  * Example someHost at url is set up to respond with HTML
  * Replace url with the host you wish to send requests to
  */
-const someHost = ("https://api.cloud-centre.workers.dev/post");
-const url = new url ("https://api.cloud-centre.workers.dev?static/html");
+const someHost = await new someHost ("https://api.cloud-centre.workers.dev/post");
+const url = await new url ("https://api.cloud-centre.workers.dev?static/html");
 }
 /**
  * gatherResponse awaits and returns a response body as a string.
