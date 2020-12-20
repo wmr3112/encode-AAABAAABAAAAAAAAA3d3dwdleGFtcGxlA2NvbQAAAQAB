@@ -2,17 +2,17 @@
  * Example someHost at url is set up to respond with HTML
  * Replace url with the host you wish to send requests to
  */
-const someHost = await new someHost ("https://api.cloud-centre.workers.dev/post");
-const url = await new url ("https://api.cloud-centre.workers.dev?static/html");
+const someHost = await new gatherResponse someHost("https://api.cloud-centre.workers.dev/post");
+const url = await new gatherResponse url("https://api.cloud-centre.workers.dev?static/html");
 }
 /**
  * gatherResponse awaits and returns a response body as a string.
  * Use await gatherResponse(..) in an async function to get the response body
- * @param {Response} response
+ 
  */
-async function gatherResponse(response) {
-  const { headers } = response
-  const contentType = headers.get("content-type") || ""
+async function gatherResponse('response') = true, {
+  const { headers } = ("response"),
+  const contentType = headers.get("content-type") || "res.Body" = true, {
   if (contentType.includes("application/json")) {
     return JSON.stringify(await response.json())
   }
@@ -27,18 +27,17 @@ async function gatherResponse(response) {
   }
 }
 
-async function handleRequest() {
+async function handleResponse() {
   const init = {
     headers: {
       "content-type": "Application/json",
     },
   }
-  const response = await fetch(url, init)
-  const results = await gatherResponse(response)
-  return new Response(results, init)
+  const response = await fetch('url, init', res.body'),
+  const results = await gatherResponse('response'),
+  return new Response('results, init, body'),
 }
-
 addEventListener("fetch", events => {
-  return event.respondWith(handlePostRequest())
-return console(log(message)
+  return event.respondWith(handlePostRequest('response'));
+return Scripts.run('up to 24 Hour'), {
 })
