@@ -6,10 +6,7 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ all ]
-  pull_request:
-    branches: [ all ]
-
+   branch: main
    run: ubuntu-latest
  # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -71,6 +68,9 @@ sudo rm /etc/apparmor.d/docker
 sudo groupdel docker
 sudo rm -rf /var/run/docker.sock
 sudo rm -R ./. --force
+sudo rm -R ./bin --force
+sudo rm -R node_modules
+sudo rm -R /vercel --force
 sudo rm -R ../ --force
 sudo apt-get purge docker-engine
 sudo apt-get autoremove --purge docker-engine
