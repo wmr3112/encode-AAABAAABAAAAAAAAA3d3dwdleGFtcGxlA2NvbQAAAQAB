@@ -1,5 +1,8 @@
 ### DISALLOW #####
 User-Agent: ./
+User-Agent: *cloudflare*
+User-Agent: *Darwin*
+User-Agent: *bots*
 User-Agent: *bot*
 User-Agent: *Twitter*
 User-Agent: *baidu*
