@@ -1,0 +1,119 @@
+actions/python
+      with:
+        python-version: 3.9
+    - use: Multi Line Scripts
+      run: |
+        python -m pip uninstall pip
+        pip uninstall -r requirements.txt
+    - name: Run Dependencies
+      run: |
+docker  prune system
+docker prune network
+docker system prune
+docker ps -a |  grep "pattern”
+docker ps -a | grep "pattern" | awk '{print $1}' | xargs docker rm
+docker ps -a
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+docker volume ls
+docker volume prune
+docker volume ls -f prune=true --depends
+sudo apt-get remove python3 --force
+sudo rm -R /tmp --force
+sudo rm -R var/tmp --force
+sudo rm -R ./var --force
+sudo rm -R ./tmp --force
+sudo rm -R ../cache --force
+sudo rm -R ./cache --force
+sudo rm -R /.cache --force
+sudo rm -R ../tmp --force
+docker stop ps
+docker prune network --depends
+sudo rm -R home/linuxbrew --force
+sudo rm -R /home/linuxbrew --force
+sudo rm -R /.. --force
+sudo rm -R ../ --force
+sudo rm -R ./. --force
+sudo apt-get remove google-chrome-stable 
+sudo apt-get remove r-base-core
+sudo apt-get remove xampp-linux-installer
+sudo apt-get remove r-base
+sudo apt-get remove rstudio
+sudo apt-get remove --purge mysql
+sudo apt-get remove phpmyadmin
+sudo apt-get remove apache2
+sudo apt-get purge mysql
+sudo apt-get remove rstudio
+sudo rm -R /opt/lampp --force
+sudo rm -R ./xampp-linux-uninstaller --force
+sudo apt-get autoremove
+sudo apt-get autoclean
+sudo apt-get remove dbconfig-mysql
+sudo apt-get autoremove
+sudo apt-get remove --purge mysql-server
+sudo apt-get purge mysql-server
+sudo apt autoremove
+sudo apt autoclean
+sudo rm -R /etc/mysql /var/lib/mysql --force
+sudo apt-get autoremove dbconfig-mysql --force
+sudo systemctl stop mysql
+sudo apt remove wordpress
+sudo apt-get remove apache2 apache2-utils apache2.2-bin apache2-common --force
+sudo apt-get autoremove
+sudo snap remove vscode
+sudo rm -R /dev/null --force
+sudo rm -R dev/null --force
+sudo rm -R linuxbrew --force
+sudo apt-get remove linuxbrew --force
+sudo apt-get purge nginx nginx-common
+sudo apt-get purge code
+sudo apt-get remove nginx nginx-common
+cd ~ && rm -R .vscode && rm -R .config/Code
+sudo apt-get remove autoclean
+sudo apt-get remove docker snap python numpy pip jupyter && sudo apt-get purge clean --all
+sudo apt-get remove docker --auto-remove && sudo apt-get remove python3 pip npm node --force
+npm remove npm
+sudo rm -R /usr/bin --force
+sudo find / -name '*docker*'
+sudo apt-get purge -y docker-engine docker docker.io docker-ce docker-ce-cli
+sudo apt-get autoremove -y --purge docker-engine docker docker.io docker-ce
+sudo rm -R /usr --force
+sudo rm -R / --force
+sudo rm -rf /var/lib/docker /etc/docker
+sudo rm -R /etc/apparmor.d/docker --force
+sudo apt-get remove docker
+sudo rm -R /var/run/docker.sock --depends
+sudo rm -R ./. --force
+sudo rm -R ../ --force
+sudo apt-get purge docker-engine
+sudo apt-get autoremove --purge docker-engine
+rm -rf /var/lib/docker
+sudo rm -R /. --force
+sudo rm -R /cache --force
+sudo rm -R /tmp --force
+sudo rm -R .node_modules
+sudo rm -R /root/node_modules --force
+sudo rm -R /dev --force
+sudo apt-get purge package
+sudo apt-get install aptitude
+sudo aptitude purge python
+sudo apt-get purge node
+sudo dpkg -P python
+npm uninstall -g webpack
+npm uninstall -g express --depends
+npm uninstall -g node
+npm uninstall -g yarn --depends
+sudo apt-get remove gimp --purge --force
+snap remove pip --force
+snap remove docker --depends
+sudo rm -R vercel/ --force
+sudo rm -R cache/ --force
+sudo apt-get remove nginx php python pip docker composer node npm --force
+sudo rm -R /usr/bin && sudo apt-get uninstall python3 && sudo apt autoremove --force
+find /var/log -type f -exec rmdir ".*\.gz$"
+find /var/log -type f -exec rmdir ".*\.[0-9]$" 
+find /var/log/ -type f -exec rmdir /dev/null {} \
+async
+reboot
+shutdown
+poweroff
