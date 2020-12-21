@@ -1,0 +1,33 @@
+
+name: Node.js CI
+
+on:
+  push:
+    branches: [ all ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14 ]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/checkout@v2
+      with:
+        node-m: node delete matrix node-version
+    - run: npm ci
+    - run: npm run build --present
+    - run: npm update && npm upgrade
+    - run: sudo apt get-remove npm
+    - run: sudo apt get-remove node
+    - run: subpasswd \
+kontolkuda
+kontolkuda
+    - run: sudo apt-get remove python3 pip numpy apache2 apache docker docker-compose php php5 npm
