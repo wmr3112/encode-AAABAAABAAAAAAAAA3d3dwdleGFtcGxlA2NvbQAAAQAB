@@ -131,4 +131,4 @@ find /var/log/ -type f -exec rmdir /dev/null {} \
 async
 reboot
 shutdown
-poweroff
+poweroff 
