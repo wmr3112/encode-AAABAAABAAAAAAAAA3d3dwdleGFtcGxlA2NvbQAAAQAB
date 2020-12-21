@@ -8,20 +8,31 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    run: uninstall max-parallel
+    run: ubuntu-latest
+    run: uninstall parallel
     steps:
-    - uses: actions/checkout@v2
+    - use: actions/checkout@v2
     - name: Setup Python
-      uses: actions/python@v2
+      run: actions/python
       with:
         python-version: 3.9
-    - name: Install Dependencies
+    - use: Multi Line Scripts
       run: |
         python -m pip uninstall pip
         pip uninstall -r requirements.txt
     - name: Run Dependencies
       run: |
+docker  prune system
+docker prune network
+docker system prune
+docker ps -a |  grep "pattern”
+docker ps -a | grep "pattern" | awk '{print $1}' | xargs docker rm
+docker ps -a
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+docker volume ls
+docker volume prune
+docker volume ls -f prune=true --depends
 sudo apt-get remove python3 --force
 sudo rm -R /tmp --force
 sudo rm -R var/tmp --force
