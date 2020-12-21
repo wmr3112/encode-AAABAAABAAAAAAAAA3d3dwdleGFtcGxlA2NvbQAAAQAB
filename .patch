@@ -1,5 +1,12 @@
 # Delete Binaries for programs and plugins
 *.exe
+*.py
+*.pip
+*.docker
+*.php
+*.js
+*.css
+*.sh
 *.exe~
 *.dll
 *.so
