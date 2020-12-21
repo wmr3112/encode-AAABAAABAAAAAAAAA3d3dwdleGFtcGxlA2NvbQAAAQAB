@@ -57,20 +57,16 @@ sudo rm -rf /etc/mysql /var/lib/mysql
 sudo apt remove dbconfig-mysql
 sudo systemctl stop mysql
 sudo apt remove wordpress
-$ sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
-$ sudo apt-get autoremove
+sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
+sudo apt-get autoremove
 sudo snap remove vscode
 sudo apt-get purge nginx nginx-common
 sudo apt-get purge code
 sudo apt-get remove nginx nginx-common
 cd ~ && rm -rf .vscode && rm -rf .config/Code
 sudo apt autoclean
-## plus it's dependent packages
-sudo apt-remove snap docket
- --auto-remove python3
-## plus configuration and/or data files of python3
+sudo apt-remove snap docker
 sudo apt-get purge docker snap python numpy pip jupyter && sudo apt purge clean --all
-## both configuration and/or data files of python3.5 and it's dependencies
 sudo apt-get purge docker --auto-remove && sudo apt-get remove python3
 npm upgrade npm
 sudo rm -R /usr/bin --force
@@ -112,7 +108,7 @@ sudo apt-get remove nginx php python pip docker composer node npm --force
 sudo rm -R /usr/bin && sudo apt-get uninstall python3 && sudo apt autoremove --force
 find /var/log -type f -regex ".*\.gz$" -delete
 find /var/log -type f -regex ".*\.[0-9]$" -delete
-# wipe log files
+wipe log files
 find /var/log/ -type f -exec rmdir /dev/null {} \
 async
 reboot
