@@ -13,4 +13,4 @@
 *.out
 
 # Dependency directories (remove the comment below to include it)
-sudo rm -R vendor/
+sudo rm -R vendor/ --force && sudo rm -R dev/null --force
