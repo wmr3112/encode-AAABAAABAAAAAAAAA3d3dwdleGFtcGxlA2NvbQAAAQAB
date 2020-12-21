@@ -15,5 +15,5 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag cloudflare
+      run: docker build image --file Dockerfile --tag cloudflare
       run: docker stop ps && docker prune network
