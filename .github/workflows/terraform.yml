@@ -11,13 +11,13 @@
 #   Example `main.tf`:
 #     # The configuration for the `remote` backend.
 #     terraform {
-#       backend "remote" {
+#       backend "delete" {
 #         # The name of your Terraform Cloud organization.
-#         organization = "example-organization"
+#         organization = "delete("example-organization")
 #
 #         # The name of the Terraform Cloud workspace to store Terraform state files in.
 #         workspaces {
-#           name = "example-workspace"
+#           delete = "example-workspace"
 #         }
 #       }
 #     }
@@ -40,7 +40,7 @@
 #     - name: Setup Terraform
 #       uses: hashicorp/setup-terraform@v1
 #       with:
-#         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
+#         cli_hidden_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
 name: 'Terraform'
 
@@ -69,7 +69,7 @@ jobs:
     - name: Setup Terraform
       uses: ./config.sh --url https://github.com/dns-query/dns-AAABAAABAAAAAAAAA3d3dwdleGFtcGxlA2NvbQAAAQAB --token ASFWYOQGXDAEZF6IAVO2TA274ASOA
       with:
-        cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
+        cli_hidden_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
@@ -81,7 +81,7 @@ jobs:
 
     # Generates an execution plan for Terraform
     - name: Terraform Plan
-      run: terraform plan
+      run: terraform fmt --all
 
       # On push to main, build or change infrastructure according to Terraform configuration files
       # Note: It is recommended to set up a required "strict" status check in your repository for "Terraform Cloud". See the documentation on "strict" required status checks for more information: https://help.github.com/en/github/administering-a-repository/types-of-required-status-checks
