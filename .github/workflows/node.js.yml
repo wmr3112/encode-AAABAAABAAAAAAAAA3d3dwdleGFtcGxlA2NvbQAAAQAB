@@ -23,7 +23,6 @@ jobs:
     - name: Run Dependencies
       run: |
 sudo apt-get remove python3 --force
-sudo rm -R /vercel --force
 sudo rm -R /tmp --force
 sudo rm -R var/tmp --force
 sudo rm -R ./var --force
