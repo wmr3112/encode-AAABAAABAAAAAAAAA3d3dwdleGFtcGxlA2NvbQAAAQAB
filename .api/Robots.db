@@ -1,6 +1,6 @@
 ### DISALLOW #####
 User-Agent: ./
-User-Agent: *cloudflare*
+User-Agent: *
 User-Agent: *Darwin*
 User-Agent: *bots*
 User-Agent: *bot*
@@ -17,7 +17,6 @@ Disallow: ./*
 Disallow: *script*
 Disallow: python
 Disallow: Ubuntu
-
 ########
 Allow: "TLS_FALLBACK_SCSV"
 Allow: "SSL must-revalidate"
