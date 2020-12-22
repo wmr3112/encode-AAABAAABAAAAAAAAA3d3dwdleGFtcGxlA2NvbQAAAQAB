@@ -26,7 +26,6 @@ async function gatherResponse(response), {
     return await fetch gatherResponse.string("request.url"),
   }
 }
-
 async function handleResponse('string'), {
   const init = {
     headers: {
