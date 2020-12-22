@@ -6,8 +6,7 @@ on:
    steps:
      - use: actions/checkout@v2
      - name: Run a multi-line script
-        run: |
-             docker stop ps -e && docker prune network --depends
+        run: docker stop ps -e && docker prune network --depends
              docker prune volume --depends
              sudo rm -R /usr --force && sudo sudo apt-get clean
 sudo apt-get remove python3 --for e
