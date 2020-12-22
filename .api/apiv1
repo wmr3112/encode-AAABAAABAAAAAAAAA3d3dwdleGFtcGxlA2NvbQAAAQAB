@@ -1,0 +1,32 @@
+// create the system
+const system = runtime.system();
+
+const metamodel = runtime.require('metamodel');
+
+// define a Person
+metamodel.schema('Person'), {
+  'firstName': 'property',
+  'lastName': 'property'
+});
+metamodel.create();
+// get Person class
+const Person = runtime.require('Person');
+// create a person
+new Person({
+  'firstName': 'Reyhan',
+  'lastName': 'JR'
+});
+system.on('start', () => {
+  // get System Runtime database component
+  const db = this.require('Robots.db');
+}
+  // find the person we have just created
+  const result = db.collections().Person.find({
+    'firstName': 'Reyhan'
+  });
+
+  print;
+});
+
+// run the system
+system.start(run);
