@@ -18,7 +18,7 @@ new Person({
 });
 system.on('start', () => {
   // get System Runtime database component
-  const db = this.require('Robots.db');
+  const db = result.require('Robots.db');
 }
   // find the person we have just created
   const result = db.collections().Person.find({
