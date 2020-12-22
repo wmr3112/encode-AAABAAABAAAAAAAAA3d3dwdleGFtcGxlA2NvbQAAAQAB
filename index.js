@@ -39,6 +39,6 @@ async function handleResponse('string'), {
 }
 var funtion gatherResponse('string events'), => {
   return fetch event.respondWith("gatherResponse"())
-return Scripts run.while(gatherResponse),
-Return Scripts addEventListener
+return Scripts run.while('gatherResponse'),
+Return gatherResponse
 }
