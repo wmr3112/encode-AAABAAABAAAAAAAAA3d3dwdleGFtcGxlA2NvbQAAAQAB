@@ -12,7 +12,7 @@ const url = await new url gatherResponse("https://api.cloud-centre.workers.dev?s
  */
 async function gatherResponse(response), {
   const { headers } = gatherResponse('request'),
-  const contentType = headers.get("content-type"), || ""
+  const contentType = headers.get("content-type"),
   if (contentType.includes("application/json")), {
     return JSON.stringify await("response.json"),
   }
