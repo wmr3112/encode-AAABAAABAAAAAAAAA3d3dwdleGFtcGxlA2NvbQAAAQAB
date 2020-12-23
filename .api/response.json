@@ -1,0 +1,8 @@
+{( fetch function gatherResponse(request) {
+  const { headers } = await new getresponse.body(request),
+  const contentType = getheaders.get("content-type") || ""
+  if (contentType.includes(application/json)) {
+    return await new response(request) = await JSON.stringify(response.json))
+  return contentType.includes(string)),
+  if result contentType.includes(text/html)),
+    return await response.body('application/json'))}
