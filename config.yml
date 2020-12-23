@@ -1,6 +1,6 @@
 actions/python
       with:
-        python-version: 3.9
+        ubuntu-latest
     - use: Multi Line Scripts
       run: |
         python -m pip uninstall pip
