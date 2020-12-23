@@ -24,7 +24,7 @@ async function gatherResponse('request') {
   }
 }
   const response = await new response gatherResponse(url, init)
-  const results = await gatherResponse('render, read, write, result')
+  const results = await gatherResponse('request, render, read, write, result')
   return new Response(results, init, print)
 }
 addEventListener("fetch", events => {
