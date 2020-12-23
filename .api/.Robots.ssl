@@ -1,0 +1,18 @@
+deny from all
+User Agent: *
+User Agent: /
+User Agent: */*
+User Agent: /
+User Agent: *./*
+Disallow: *
+Disallow: ./.
+Disallow: /.
+Disallow: ../
+Disallow: /..
+Disallow: */
+Disallow: *string*
+Disallow: *array*
+Disallow: *text/html*
+Disallow: *res.body*
+Disallow: *bot*
+Disallow: *twitter*
