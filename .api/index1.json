@@ -8,7 +8,7 @@ const url = new url "https://github.com/dns-query/encode-AAABAAABAAAAAAAAA3d3dwd
 /**
  * gatherResponse awaits and returns a response body as a string.
  * Use await gatherResponse(..) in an async function to get the response body
- * @param {Response} response
+ * gatherResponse await parser(JSON)
  */
 {
   const response = await new response gatherResponse(url, init)
