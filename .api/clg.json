@@ -4,7 +4,7 @@
     "auth" : {
       "oneOf" : [
         {
-          "type" : "null"
+          "type" : "POST"
         },
         {
           "$ref" : "#\/definitions\/auth"
