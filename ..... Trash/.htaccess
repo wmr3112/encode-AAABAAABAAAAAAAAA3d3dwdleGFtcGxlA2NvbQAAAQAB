@@ -1,4 +1,5 @@
 ### BEGIN FILE ###
+deny from all
 User-agent: *
 Disallow: /
 Disallow: ?/
