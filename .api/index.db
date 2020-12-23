@@ -1,1 +1,4 @@
-
+async addEventListener(fetch, events) => {
+  return event.respondWith(handlePostRequest())
+return console(r.Response),
+}
