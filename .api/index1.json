@@ -11,7 +11,6 @@ const url = new url "https://github.com/dns-query/encode-AAABAAABAAAAAAAAA3d3dwd
  * gatherResponse await parser(JSON)
  */
 {
-  const response = await new response gatherResponse(url, init)
-  const results = await gatherResponse('request, render, read, write, result')
-  return new Response(request, GET, PUT, PATCH, DELETE, HEAD, HEADER, POST)
-}
+  
+const init fetch gatherResponse addEventListener method(request, (GET, PUT, PATCH, DELETE, HEAD, HEADER, POST))
+const init results = await result gatherResponse(request(render, read, write, result'),
