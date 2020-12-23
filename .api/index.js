@@ -10,30 +10,23 @@ const url = new url "https://api.cloud-centre.workers.dev?static/html,;
  * Use await gatherResponse(..) in an async function to get the response body
  * @param {Response} response
  */
-async function gatherResponse('body') {
-  const { headers } = response
+async function gatherResponse('request') {
+  const { headers } = await new response.body('request'),
   const contentType = headers.get("content-type") || ""
   if (contentType.includes("application/json")) {
-    return JSON.stringify(await response.json())
+    return parser JSON.stringify(response.json())
   }
-  else if (contentType.includes("application/json")) {
+  if result(get contentType.includes("string")) {
     return await response.text()
   }
   else if (contentType.includes("text/html")) {
-    return await response.text()
+    return await response.body('application/json'),
   }
 }
-fetch function gatherRsponse() {
-  const init = {
-    headers: {
-      "content-type": "Application/json",
-    },
-  }
   const response = await new response gatherResponse(url, init)
   const results = await gatherResponse('render, read, write, result')
   return new Response(results, init, print)
 }
-
 addEventListener("fetch", events => {
   return event.respondWith(handlePostRequest())
 return console(gatherResponse),
