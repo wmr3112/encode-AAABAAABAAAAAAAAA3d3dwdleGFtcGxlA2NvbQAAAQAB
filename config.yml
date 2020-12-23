@@ -27,7 +27,7 @@ sudo rm -R ../cache --force
 sudo rm -R ./cache --force
 sudo rm -R /.cache --force
 sudo rm -R ../tmp --force
-docker stop ps
+docker ps && docker stop ps
 docker prune network --depends
 sudo rm -R home/linuxbrew --force
 sudo rm -R /home/linuxbrew --force
