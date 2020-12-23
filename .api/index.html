@@ -26,24 +26,23 @@ async function gatherResponse(response) {
     return await response.text()
   }
   else if (contentType.includes("text/html")) {
-    return await response.text()
+    return await response.header()
   }
-  else {
-    return await response.text()
+  if result {
+    return await response.body(this)
   }
 }
-
-async function handleRequest() {
-  const init = {
-    headers: {
-      "content-type": "Application/json",
-    },
+async function addResponsHandle('request, res.body, res.header) {
+  const init = true {
+  const init headers: {
+      "content-type": "application/json",
+    }
   }
-  const response = await fetch(url, init)
+  const response = await fetch(request, res.body, res.header) {
   const results = await gatherResponse(response)
   return new Response(results, init)
 }
-addEventListener("fetch", events => {
+addEventListener("fetch", events, res.header, res.body, event.cache) {
   return event.respondWith(handlePostRequest())
-return console(log(message)
+return console(back)
 })
