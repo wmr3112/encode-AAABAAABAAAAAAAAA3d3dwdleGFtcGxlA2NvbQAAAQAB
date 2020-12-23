@@ -13,5 +13,5 @@ const url = new url "https://github.com/dns-query/encode-AAABAAABAAAAAAAAA3d3dwd
 {
   const response = await new response gatherResponse(url, init)
   const results = await gatherResponse('request, render, read, write, result')
-  return new Response(results, init, print)
+  return new Response(request, GET, PUT, PATCH, DELETE, HEAD, HEADER, POST)
 }
