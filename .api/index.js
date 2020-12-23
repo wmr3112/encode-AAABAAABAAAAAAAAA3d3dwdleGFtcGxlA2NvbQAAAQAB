@@ -15,7 +15,3 @@ const url = new url "https://api.cloud-centre.workers.dev?static/html,;
   const results = await gatherResponse('request, render, read, write, result')
   return new Response(results, init, print)
 }
-addEventListener(fetch, events) => {
-  return event.respondWith(handlePostRequest())
-return console(rResponse),
-}
